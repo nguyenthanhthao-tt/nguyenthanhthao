@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Thảo Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <style>
+        .header-tho-bg {
+    position: relative;
+    padding: 100px 0; /* Cho khung rộng ra nhìn mới thấy ảnh đẹp */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('anh-dep.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Đổi chữ sang màu trắng cho nổi trên nền ảnh */
+    text-align: center;
+}
+
+.header-tho-bg h3, .header-tho-bg p {
+    color: #f0f0f0; /* Màu chữ phụ sáng hơn xíu */
+}
+
+.header-tho-bg h1 {
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Đổ bóng cho tên Thỏ nổi bật */
+}
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f8ff; color: #333; }
+        
+        .header-section { background: white; padding: 40px 0; border-bottom: 3px solid #3498db; margin-bottom: 30px; }
+        .hallo-text { color: #3498db; font-weight: bold; letter-spacing: 2px; }
+        .name-title { color: #2c3e50; font-size: 40px; margin-top: 10px; font-weight: bold; }
+        
+        .info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            min-height: 250px;
+            margin-bottom: 20px;
+            border-top: 4px solid #3498db;
+            transition: 0.3s;
+        }
+        .info-card:hover { transform: translateY(-5px); }
+        .info-card h4 { color: #2980b9; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .info-card p { line-height: 1.8; font-size: 15px; }
+
+        /* Hình ảnh */
+        .profile-img { 
+            width: 100%; 
+            max-width: 200px; 
+            border-radius: 10px; 
+            margin-bottom: 15px;
+            border: 3px solid #3498db;
+        }
+
+        /* Footer */
+        footer { padding: 40px 0; color: #7f8c8d; font-style: italic; }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" style="border-bottom: 2px solid #3498db;">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html" style="color: #3498db; font-weight: bold;">THANH THẢO</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">GIỚI THIỆU</a></li>
+        <li><a href="trainghiem.html">TRẢI NGHIỆM</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-top: 70px;"></div>
+<div class="header-tho-bg">
+    <h3 class="hallo-text">HALLO EVERYONE</h3>
+    <p class="text-muted">Giới thiệu bản thân</p>
+    <h1 class="name-title">THANH THẢO</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="info-card">
+                <h4><span class="glyphicon glyphicon-education"></span> Học vấn</h4>
+                <p>Sinh viên khoa Công nghệ & Kỹ thuật, chuyên ngành <b>Công nghệ Thông tin</b> khóa 25.</p>
+                <p>Thành viên lớp DA25TTC Đại học Trà Vinh.</p>
+                <p>Tích cực tham gia đội Sinh viên Tự quản và CLB Kinh doanh Online.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <div class="info-card">
+                <h4><span class="glyphicon glyphicon-user"></span> Cá nhân</h4>
+                <img src="https://via.placeholder.com/150" alt="Thanh Thảo" class="profile-img">
+                <p><b>Họ tên:</b> NGUYỄN THANH THẢO (2007)</p>
+                <p><b>Bd:</b>Thỏ <b> Động vật yêu thích:</b> Mèo</p>
+                <p><b>Chiều cao:</b> 1m55 | <b>Cân nặng:</b> 45kg</p>
+                <p><b>Nơi ở:</b> Chợ Huyền Hội, ấp Lưu Tư</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="info-card text-right">
+                <h4>Gia đình <span class="glyphicon glyphicon-heart"></span></h4>
+                <p>Gia đình có 1 chị gái và 1 em trai.</p>
+                <p>Cha mẹ đều đi làm vất vả để nuôi mấy chị em ăn học.</p>
+                <p>Chị gái hiện đang học và làm việc tại Tp. HCM, em trai đang học cấp 2.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center">
+    <div class="container">
+        <hr>
+        <p>Cảm ơn bạn đã ghé thăm góc nhỏ của Thỏ! <br> Chúc bạn một ngày tốt lành và tràn đầy năng lượng ✨</p>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
